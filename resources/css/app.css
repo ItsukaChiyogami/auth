@@ -1,0 +1,95 @@
+/* Mengatur tampilan dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Container untuk form login */
+.container {
+    background: #fff;
+    padding: 20px 25px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    background: #f0f0f0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Label animasi */
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    color: #666;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat input difokuskan */
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -15px;
+    left: 5px;
+    font-size: 0.8rem;
+    color: #6e8efb;
+}
+
+/* Tombol login */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #6e8efb;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #5a73d8;
+}
+
+/* Pesan pendaftaran */
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.message a {
+    color: #6e8efb;
+    text-decoration: none;
+}
